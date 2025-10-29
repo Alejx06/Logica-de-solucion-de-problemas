@@ -1,43 +1,54 @@
-# Logica-de-solucion-de-problemas
-Descripción General
+🏦 App Bank – Proyecto de Lógica de Solución de Problemas
 
-Este proyecto se llama AppBank y lo desarrollé en Java usando Spring Boot.
-La idea principal fue crear una simulación de un sistema bancario donde se puedan manejar clientes, cuentas, transacciones y cálculos de intereses.
-Más allá de solo programar, lo que busco con este proyecto es mostrar cómo se pueden aplicar los conceptos de lógica y resolución de problemas a algo real, usando la programación como herramienta.
+App Bank es una aplicación desarrollada en Java con Spring Boot y Maven, pensada para simular el funcionamiento de un banco.
+Con esta app puedes crear clientes, abrir cuentas, hacer depósitos, retiros y transferencias fácilmente.
+El proyecto fue hecho aplicando principios de programación orientada a objetos, arquitectura por capas y manejo de datos con JSON.
 
-Quise que el código reflejara cómo funciona un banco de verdad: hay clientes, cuentas (de ahorro o corriente), movimientos de dinero, intereses y control de errores. Todo está dividido en partes claras para que el programa sea fácil de entender, mantener y mejorar.
+⸻
 
- Propósito del Proyecto
+⚙️ Tecnologías Usadas
+	•	☕ Java 17+
+	•	🚀 Spring Boot
+	•	🧱 Maven
+	•	🧾 Springdoc OpenAPI (Swagger)
+	•	⚡ Thunder Client (para pruebas de endpoints)
 
-El propósito principal del código es aprender a resolver problemas complejos de manera estructurada.
-Por ejemplo: ¿qué pasa si un cliente intenta retirar más dinero del que tiene? ¿Cómo se calcula el interés de una cuenta de ahorro según el tipo? ¿Cómo guardo la información para no perderla?
+⸻
 
-Todas esas situaciones las resolví usando clases, interfaces, excepciones y archivos JSON, aplicando bien los principios de programación orientada a objetos , como la herencia, la encapsulación y la abstracción.
+📂 Estructura del Proyecto
+•controller
+Controla las peticiones (endpoints) y conecta con el servicio.
+•service
+Contiene la lógica principal del negocio.
+•repository
+Maneja el almacenamiento de datos en archivos JSON.
+•model
+Define las clases (Cliente, Cuenta, Transacción, etc.).
+•exception
+Maneja errores personalizados del sistema.
 
+💻 Programas Necesarios
 
+🟦 Visual Studio Code – Editor de código
+🔧 JDK (Java Development Kit) – Para ejecutar proyectos Java
+📦 Maven – Para compilar y gestionar dependencias
 
- Qué Hace el Programa:
+📥 Descargar Visual Studio Code
+📥 Descargar JDK
 
-Mi aplicación permite simular varias operaciones básicas que haría un banco real:
-	•	 Registrar clientes con su información básica.
-	•	 Crear cuentas de ahorro o corrientes, con diferentes tipos de intereses.
-	•	 Realizar transacciones: depósitos, retiros y transferencias.
-	•	 Calcular intereses según estrategias diferentes (tasa simple o escalonada).
-	•	 Guardar los datos en archivos JSON, para no perder la información.
-	•	 Manejar errores si se hace una operación inválida (como retirar más dinero del que hay).
+⸻
 
-  COMO EJECUTARLO:
+🧩 Extensiones Recomendadas
 
-  1.clona el repositorio 
-  
-  2.ingresa el proyecto 
-  
-  3.commpila y ejecuta 
+Estas extensiones te facilitan todo el trabajo dentro de VS Code 👇
 
-  LO QUE APRENDI:
-
-Con este proyecto, aprendi muchisimo sobre como pensar como un programador, no solo escribir codigo, tambien aprendi a analizar problemas reales, dividirlos en partes lógicas, y usar la programación para       resolverlos paso a paso.
-También entendí la importancia de estructurar bien un proyecto, usar clases, controlar errores y mantener el código limpio. 
+	•	☕ Extension Pack for Java
+	•	🧰 Debugger for Java
+	•	⚙️ Maven for Java
+	•	📁 Project Manager for Java
+	•	💚 Spring Boot Extension Pack
+	•	🚀 Spring Boot Dashboard
+	•	⚡ Thunder Client
 
 GRACIAS AL PROFE DANIEL AGUDELO POR SU PACIENCIA Y EXPLICACION 
 
@@ -56,6 +67,21 @@ LISTAR TODOS LOS CLIENTES FUNCIONA EXCELENTE
 BUSCAR CLIENTE POR SU ID TAMBIEN FUNCIONA 
 
 <img width="600" height="400" alt="Captura de pantalla 2025-10-24 130116" src="https://github.com/user-attachments/assets/806eefb3-294a-473b-9282-9d6d9a06c349" />
+
+
+💰 Crear Cuenta Corriente
+
+POST /api/bank/customers/{id_cliente}/accounts
+
+{
+  "type": "CHECKING",
+  "accountId": "101",
+  "parameter": 500.0
+}
+
+
+
+
 
 
   
