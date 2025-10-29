@@ -4,27 +4,42 @@ App Bank es una aplicación desarrollada en Java con Spring Boot y Maven, pensad
 Con esta app puedes crear clientes, abrir cuentas, hacer depósitos, retiros y transferencias fácilmente.
 El proyecto fue hecho aplicando principios de programación orientada a objetos, arquitectura por capas y manejo de datos con JSON.
 
-⸻
+
 
 ⚙️ Tecnologías Usadas
-	•	☕ Java 17+
-	•	🚀 Spring Boot
-	•	🧱 Maven
-	•	🧾 Springdoc OpenAPI (Swagger)
-	•	⚡ Thunder Client (para pruebas de endpoints)
 
-⸻
+	•	 Java 17+
+	
+	•	 Spring Boot
+	
+	•	 Maven
+	
+	•	 Springdoc OpenAPI (Swagger)
+	
+	•	 Thunder Client (para pruebas de endpoints)
+
+
 
 📂 Estructura del Proyecto
+
 •controller
-Controla las peticiones (endpoints) y conecta con el servicio.
+
+Controla las peticiones (endpoints) y conecta con el servicio
+
 •service
+
 Contiene la lógica principal del negocio.
+
 •repository
+
 Maneja el almacenamiento de datos en archivos JSON.
+
 •model
+
 Define las clases (Cliente, Cuenta, Transacción, etc.).
+
 •exception
+
 Maneja errores personalizados del sistema.
 
 💻 Programas Necesarios
@@ -33,10 +48,6 @@ Maneja errores personalizados del sistema.
 🔧 JDK (Java Development Kit) – Para ejecutar proyectos Java
 📦 Maven – Para compilar y gestionar dependencias
 
-📥 Descargar Visual Studio Code
-📥 Descargar JDK
-
-⸻
 
 🧩 Extensiones Recomendadas
 
